@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quixa Tour - Serviços</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Quixa Tour</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="catalogo.html">Catálogo Turístico</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Serviços e Radar de Entorno</h2>
+            <article>
+                <h3>Conectando você ao Comércio Local</h3>
+                <p>O sistema impulsiona a economia local através de um "radar de serviços" baseado em geolocalização. Isso conecta diretamente o turista aos comércios e restaurantes situados no entorno dos locais visitados.</p>
+            </article>
+
+            <!-- Container preenchido pelo app.js via fetch GET /api/servicos -->
+            <div id="servicos-lista" class="grid-cards">
+                <p class="loading">Carregando serviços...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Quixa Tour - Sistema Integrado de Apoio ao Turismo Local.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

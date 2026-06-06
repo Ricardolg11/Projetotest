@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quixa Tour - Catálogo Turístico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Quixa Tour</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="catalogo.html">Catálogo Turístico</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Catálogo Turístico</h2>
+            <p>Explore os principais pontos turísticos de Quixadá. Dados carregados dinamicamente via API.</p>
+
+            <!-- Container preenchido pelo app.js via fetch GET /api/pontos -->
+            <div id="catalogo-lista" class="grid-cards">
+                <p class="loading">Carregando...</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>O que visitantes dizem</h2>
+            <!-- Container preenchido pelo app.js via fetch GET /api/avaliacoes -->
+            <div id="avaliacoes-lista" class="lista-avaliacoes">
+                <p class="loading">Carregando avaliações...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Quixa Tour - Sistema Integrado de Apoio ao Turismo Local.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
